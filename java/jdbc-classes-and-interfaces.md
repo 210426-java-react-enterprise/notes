@@ -7,6 +7,8 @@
 *   CallableStatement (I)
 *   ResultSet (I)
 
+---
+
 **<span style="text-decoration:underline;">DriverManager</span>**
 
 *   a class that manages the Driver Object, which represents our DB server
@@ -19,6 +21,8 @@ Commonly Used Methods
 *   attempts to establish a connection to the given database URL
 *   attempts to select an appropriate driver from the set of registered JDBC drivers
 *   throws SQLException if a DB access error occurs
+
+---
 
 **<span style="text-decoration:underline;">Connection</span>**
 
@@ -41,6 +45,8 @@ Commonly Used Methods
 *   creates a CallableStatement object for calling DB stored procedures/functions
 *   throws SQLException if a DB access error occurs or if the connection is closed
 
+---
+
 **<span style="text-decoration:underline;">Statement</span>**
 
 *   an interface that is used to execute our SQL queries
@@ -59,6 +65,8 @@ Commonly Used Methods
 *   throws SQLTimeoutException if:
     *   the driver has determined that the timeout value (specified by the setQueryTimeout method) has been exceeded and has at least attempted to cancel the currently running Statement
 
+---
+
 **<span style="text-decoration:underline;">PreparedStatement</span>**
 
 *   an interface is also used to execute our SQL queries
@@ -75,6 +83,8 @@ Commonly Used Methods
 *   executes the SQL statement in the PreparedStatement object, which must be either an SQL DDL statement or either an INSERT, UPDATE, or DELETE statement
 
 *   returns either the count of rows affect by the DML statement or nothing, in the case of DDL statements
+
+---
 
 **<span style="text-decoration:underline;">CallableStatement</span>**
 
