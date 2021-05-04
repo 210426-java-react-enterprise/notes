@@ -14,11 +14,7 @@
 
 Commonly Used Methods
 
-*   `public static Connection getConnection(String url, String user,`
-
-```
-   String password) throws SQLException
-```
+*   `public static Connection getConnection(String url, String user, String password) throws SQLException`
 
 *   attempts to establish a connection to the given database URL
 *   attempts to select an appropriate driver from the set of registered JDBC drivers
@@ -99,6 +95,8 @@ Commonly Used Methods
 *   executes the SQL statement in the CallableStatement object, which must be either an SQL DDL statement or either an INSERT, UPDATE, or DELETE statement
 
 *   returns either the count of rows affected by the DML statement or nothing, in the case of DDL statements
+
+---
 
 **<span style="text-decoration:underline;">ResultSet</span>**
 
