@@ -17,10 +17,9 @@
 Commonly Used Methods
 
 *   `public static Connection getConnection(String url, String user, String password) throws SQLException`
-
-*   attempts to establish a connection to the given database URL
-*   attempts to select an appropriate driver from the set of registered JDBC drivers
-*   throws SQLException if a DB access error occurs
+	*   attempts to establish a connection to the given database URL
+	*   attempts to select an appropriate driver from the set of registered JDBC drivers
+	*   throws SQLException if a DB access error occurs
 
 ---
 
@@ -31,19 +30,16 @@ Commonly Used Methods
 Commonly Used Methods
 
 *   `Statement createStatement() throws SQLException`
-
-*   creates a Statement object for sending SQL statements to the DB
-*   throws SQLException if a DB access error occurs or if the connection is closed
+	*   creates a Statement object for sending SQL statements to the DB
+	*   throws SQLException if a DB access error occurs or if the connection is closed
 
 *   `PreparedStatement prepareStatement(String sql) throws SQLException`
-
-*   creates a PreparedStatement object for sending parameterized SQL statements to the DB
-*   throws SQLException if a DB access error occurs or if the connection is closed
+	*   creates a PreparedStatement object for sending parameterized SQL statements to the DB
+	*   throws SQLException if a DB access error occurs or if the connection is closed
 
 *   `CallableStatement prepareCall(String sql) throws SQLException`
-
-*   creates a CallableStatement object for calling DB stored procedures/functions
-*   throws SQLException if a DB access error occurs or if the connection is closed
+	*   creates a CallableStatement object for calling DB stored procedures/functions
+	*   throws SQLException if a DB access error occurs or if the connection is closed
 
 ---
 
@@ -75,14 +71,11 @@ Commonly Used Methods
 <span style="text-decoration:underline;">Commonly Used Methods</span>
 
 *   `ResultSet executeQuery() throws SQLException`
-
-*   executes the given SQL statement and returns a single ResultSet object
+	*   executes the given SQL statement and returns a single ResultSet object
 
 *   `int executeUpdate() throws SQLException`
-
-*   executes the SQL statement in the PreparedStatement object, which must be either an SQL DDL statement or either an INSERT, UPDATE, or DELETE statement
-
-*   returns either the count of rows affect by the DML statement or nothing, in the case of DDL statements
+	*   executes the SQL statement in the PreparedStatement object, which must be either an SQL DDL statement or either an INSERT, UPDATE, or DELETE statement
+	*   returns either the count of rows affect by the DML statement or nothing, in the case of DDL statements
 
 ---
 
@@ -93,18 +86,13 @@ Commonly Used Methods
 <span style="text-decoration:underline;">Commonly Used Methods</span>
 
 *   `ResultSet executeQuery() throws SQLException`
-
-*   inherited from PreparedStatement
-
-*   executes the given SQL statement and returns a single ResultSet object
+	*   inherited from PreparedStatement
+	*   executes the given SQL statement and returns a single ResultSet object
 
 *   `int executeUpdate() throws SQLException`
-
-*   inherited from PreparedStatement
-
-*   executes the SQL statement in the CallableStatement object, which must be either an SQL DDL statement or either an INSERT, UPDATE, or DELETE statement
-
-*   returns either the count of rows affected by the DML statement or nothing, in the case of DDL statements
+	*   inherited from PreparedStatement
+	*   executes the SQL statement in the CallableStatement object, which must be either an SQL DDL statement or either an INSERT, UPDATE, or DELETE statement
+	*   returns either the count of rows affected by the DML statement or nothing, in the case of DDL statements
 
 ---
 
@@ -116,7 +104,9 @@ Commonly Used Methods
 <span style="text-decoration:underline;">Commonly Used Methods</span>
 
 *   `.next() throws SQLException`
+
 *   moves the cursor forward one row from its current position
+
 *   throws SQLException if:
     *   if a database access error occurs
     *   the ResultSet is closed
