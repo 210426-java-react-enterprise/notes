@@ -1,4 +1,4 @@
-**Commonly used Classes & Interfaces**
+# Commonly used Classes & Interfaces
 
 *   DriverManager (C)
 *   Connection (I)
@@ -9,7 +9,7 @@
 
 ---
 
-**<span style="text-decoration:underline;">DriverManager</span>**
+## DriverManager
 
 *   a class that manages the Driver Object, which represents our DB server
 *   gets a Connection Object
@@ -24,7 +24,7 @@ Commonly Used Methods
 
 ---
 
-**<span style="text-decoration:underline;">Connection</span>**
+## Connection
 
 *   an interface that represents a connection or a session between our Java application and the DB
 
@@ -47,7 +47,7 @@ Commonly Used Methods
 
 ---
 
-**<span style="text-decoration:underline;">Statement</span>**
+## Statement
 
 *   an interface that is used to execute our SQL queries
 
@@ -86,7 +86,7 @@ Commonly Used Methods
 
 ---
 
-**<span style="text-decoration:underline;">CallableStatement</span>**
+## CallableStatement
 
 *   an interface used to execute stored procedures or functions
 
@@ -108,7 +108,7 @@ Commonly Used Methods
 
 ---
 
-**<span style="text-decoration:underline;">ResultSet</span>**
+## ResultSet
 
 *   an interface that represents the results of an SQL query
 *   maintains a cursor pointing to its current row (initially points before the first row)
