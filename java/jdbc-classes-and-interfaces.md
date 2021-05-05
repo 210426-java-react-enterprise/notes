@@ -49,21 +49,20 @@ Commonly Used Methods
 
 <span style="text-decoration:underline;">Commonly Used Methods</span>
 
-*   ResultSet executeQuery(String sql) throws SQLException
+*   `ResultSet executeQuery(String sql) throws SQLException`
+	*   executes the given SQL statement and returns a single ResultSet object
 
-*   executes the given SQL statement and returns a single ResultSet object
+	*   throws SQLException if:
+	    *   a DB access error occurs
+	    *   the Statement is closed
+	    *   the given SQL statement produces anything other than a single ResultSet
 
-*   throws SQLException if:
-    *   a DB access error occurs
-    *   the Statement is closed
-    *   the given SQL statement produces anything other than a single ResultSet
-
-*   throws SQLTimeoutException if:
-    *   the driver has determined that the timeout value (specified by the setQueryTimeout method) has been exceeded and has at least attempted to cancel the currently running Statement
+	*   throws SQLTimeoutException if:
+	    *   the driver has determined that the timeout value (specified by the setQueryTimeout method) has been exceeded and has at least attempted to cancel the currently running Statement
 
 ---
 
-**<span style="text-decoration:underline;">PreparedStatement</span>**
+## PreparedStatement
 
 *   an interface is also used to execute our SQL queries
 *   more efficient and more secure than Statement
