@@ -1,0 +1,14 @@
+notes for linux users
+
+amazon linux uses yum package manager
+  a package manager is a cli program that will automate the installation process of programs.
+
+linux commands
+ls		list directory
+mkdir		make a new directory
+touch		create a file
+cat		print the contents of a file
+echo		print the arguments to an output path [stdout by default]
+rm		remove files
+mv		mv files
+
